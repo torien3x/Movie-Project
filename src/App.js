@@ -2,7 +2,7 @@ import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './Movies';
-import SideNav from './Component/SideNav';
+import SideNav from './Component/SideNav/SideNav';
 
 const headers = {
     'X-RapidAPI-Key': 'fd7c953c4amshfa5b3215ca99ba0p1a522djsn7bafc29ea657',
@@ -29,8 +29,11 @@ function App() {
   return (
     <div className="App">
       <SideNav />
-      
+      <div className='right-content'>
+
+      </div>
     </div>
+
   );
 }
 

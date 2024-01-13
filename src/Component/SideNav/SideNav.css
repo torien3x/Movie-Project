@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    width: 200px;
+    padding-left: 65px;
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+
+  .top-option p, .mid-option p, .bottom-option p, .setting p{
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .top-option, .mid-option, .bottom-option {
+    border-bottom: 1px solid white;
+    margin-right: 50px;
+  }
+
+  .top-option-links, .mid-option-links, .bottom-option-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .top-option-links p, .mid-option-links p, .bottom-option-links p {
+    padding: 10px;
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .setting-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .setting-links p {
+    padding: 10px;
+  }
