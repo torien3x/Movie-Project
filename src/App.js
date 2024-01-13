@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './Movies';
 import SideNav from './Component/SideNav';
+import { BaseUrl } from './utils/url';
+import Header from './Component/Header';
 
 const headers = {
     'X-RapidAPI-Key': 'fd7c953c4amshfa5b3215ca99ba0p1a522djsn7bafc29ea657',
@@ -15,7 +17,7 @@ function App() {
   
   useEffect(() => {
     axios
-        .get('https://moviesdatabase.p.rapidapi.com/titles', {
+        .get(`${BaseUrl}/titles`, {
           headers:headers
         })
         .then(response => {
@@ -25,11 +27,12 @@ function App() {
           console.error('server error', error);
         })
   }, [])
-  console.log(data)
   return (
     <div className="App">
       <SideNav />
-      
+      <div className='right-content'>
+      <Header />
+      </div>
     </div>
   );
 }
