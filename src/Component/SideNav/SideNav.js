@@ -54,11 +54,11 @@ export default function SideNav() {
             <p>General</p>
             <div className='setting-links'>
             <Icon icon="ant-design:setting-twotone" height={20} />
-            <p>Setting</p>
+            <p id='bottom-settings'>Setting</p>
             </div>
             <div className='setting-links'>
-            <Icon icon="tabler:logout" height={20} />
-            <p>Log Out</p>
+            <Icon id='log-out' icon="tabler:logout" height={20} />
+            <p id='log-out' >Log Out</p>
             </div>
         </div>
     </div>

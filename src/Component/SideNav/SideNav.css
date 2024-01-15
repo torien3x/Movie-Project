@@ -1,8 +1,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     width: 200px;
+    height: 100vh;
     padding-left: 65px;
     background-color: black;
     color: white;
@@ -18,17 +18,25 @@
   .top-option, .mid-option, .bottom-option {
     border-bottom: 1px solid white;
     margin-right: 50px;
+    padding: 15px;
   }
 
   .top-option-links, .mid-option-links, .bottom-option-links {
     display: flex;
     align-items: center;
+    
   }
 
-  .top-option-links p, .mid-option-links p, .bottom-option-links p {
+  .top-option-links p:hover, .mid-option-links p:hover, .bottom-option-links p:hover {
+    color: deepskyblue;
+    transition: 0.2s;
     padding: 10px;
     font-size: 10px;
     margin: 0;
+  }
+
+  .top-option-links p, .mid-option-links p, .bottom-option-links p {
+    padding-left: 10px;
   }
 
   .setting-links {
@@ -38,4 +46,13 @@
 
   .setting-links p {
     padding: 10px;
+  }
+
+  #log-out {
+    color: red;
+  }
+
+  #bottom-settings:hover {
+    color: deepskyblue;
+    transition: 0.2s;
   }
